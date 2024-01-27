@@ -154,6 +154,24 @@ module.exports = {
       },
     ],
   },
+  overides: [
+    {
+      files: ['**/*.cy.spec.ts'],
+      extends: ['plugin:cypress/recommended'],
+      rules: {
+        'promise/catch-or-return': 'off',
+        'promise/always-return': 'off',
+        'promise/prefer-await-to-then': 'off',
+      },
+    },
+    {
+      files: ['**/main.ts'],
+      rules: {
+        'vue/no-reserved-component-names': 'off',
+        'vue/multi-word-component-names': 'off',
+      },
+    },
+  ],
   ignorePatterns: ['dist'],
   globals: {
     defineProps: 'readonly',
