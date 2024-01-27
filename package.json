@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ts-code-standard",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A shareable ESLint config for standardized code for Tag Samurai.",
   "main": "index.js",
   "author": "kurnia-dev",

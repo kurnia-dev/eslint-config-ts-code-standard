@@ -154,7 +154,7 @@ module.exports = {
       },
     ],
   },
-  overides: [
+  overrides: [
     {
       files: ['**/*.cy.spec.ts'],
       extends: ['plugin:cypress/recommended'],
