@@ -165,7 +165,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/main.ts'],
+      files: ['**/main.ts', '**/components/{v1,v2}/index.ts'],
       rules: {
         'vue/no-reserved-component-names': 'off',
         'vue/multi-word-component-names': 'off',
