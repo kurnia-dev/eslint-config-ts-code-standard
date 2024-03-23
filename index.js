@@ -176,10 +176,16 @@ module.exports = {
       },
     },
     {
-      files: ["**/main.ts", "**/components/{v1,v2}/index.ts"],
+      files: ["**/main.ts", "**/components/{v1,v2}/index.ts", "**/registerComponent.util.ts"],
       rules: {
         "vue/no-reserved-component-names": "off",
         "vue/multi-word-component-names": "off",
+      },
+    },
+    {
+      files: ['vue.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
       },
     },
   ],
