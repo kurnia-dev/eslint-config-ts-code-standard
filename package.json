@@ -1,13 +1,12 @@
 {
   "name": "@fewangsit/eslint-config-code-standard",
   "version": "1.0.6",
-  "type": "module",
   "description": "A shareable ESLint configuration for standardized TypeScript code for Wangsti FE Developers.",
   "main": "index.js",
   "author": "fewangsit",
   "license": "proprietary",
   "scripts": {
-    "build": "esbuild index.js --bundle --format=esm --outfile=dist/index.js",
+    "build": "esbuild index.js --bundle --format=cjs --outfile=dist/index.js",
     "lint": "eslint --ext js,ts,tsx",
     "release": "sh ./scripts/release.sh"
   },

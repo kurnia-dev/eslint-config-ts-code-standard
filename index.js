@@ -2,7 +2,7 @@ import cypress from "./rules/cypress";
 import vue from "./rules/vue";
 import importRules from "./rules/import";
 
-export default {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
