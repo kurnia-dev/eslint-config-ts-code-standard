@@ -1,6 +1,6 @@
 {
   "name": "@fewangsit/eslint-config-code-standard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A shareable ESLint configuration for standardized TypeScript code for Wangsti FE Developers.",
   "main": "index.js",
