@@ -55,7 +55,7 @@ module.exports = {
     ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
   },
-  plugins: ["@typescript-eslint", "vue"],
+  plugins: ["@typescript-eslint", "vue", "import"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
