@@ -101,7 +101,7 @@ module.exports = {
     "no-duplicate-imports": "error",
     "no-else-return": "error",
     "no-empty-function": "error",
-    "no-nested-ternary": ["error", { max: 2 }],
+    "no-nested-ternary": "error",
     "no-shadow": "error",
     "no-unneeded-ternary": "error",
     "no-useless-return": "error",
