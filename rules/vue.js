@@ -72,7 +72,7 @@ export default {
     "error",
     { ignoreIncludesComment: false, ignoreStringEscape: false },
   ],
-  "vue/padding-line-between-blocks": ["error", "always" | "never"],
+  "vue/padding-line-between-blocks": ["error", "always"],
   "vue/prefer-import-from-vue": "error",
   "vue/prefer-true-attribute-shorthand": ["error", "always"],
   "vue/prop-name-casing": ["error", "camelCase"],
