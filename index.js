@@ -3,11 +3,6 @@ import vue from "./rules/vue";
 import importRules from "./rules/import";
 
 export default {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-  },
   extends: [
     "@vue/typescript/recommended",
     "eslint:recommended",
@@ -25,7 +20,7 @@ export default {
     defineProps: "readonly",
     withDefaults: "readonly",
   },
-  ignorePatterns: ["dist"],
+  ignorePatterns: ["dist", "node_modules"],
   overrides: [
     {
       extends: ["plugin:cypress/recommended"],
