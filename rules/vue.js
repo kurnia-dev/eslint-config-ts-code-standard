@@ -39,7 +39,6 @@ export default {
     "error",
     {
       order: ["defineProps", "defineEmits", "defineModel"],
-      defineExposeLast: true,
     },
   ],
   "vue/define-props-declaration": ["error", "type-based"],
