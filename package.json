@@ -7,7 +7,7 @@
   "author": "fewangsit",
   "license": "proprietary",
   "scripts": {
-    "build": "esbuild index.js --bundle --outfile=dist/index.js",
+    "build": "esbuild index.js --bundle --format=esm --outfile=dist/index.js",
     "lint": "eslint --ext js,ts,tsx",
     "release": "sh ./scripts/release.sh"
   },
