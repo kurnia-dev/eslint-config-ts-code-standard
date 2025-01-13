@@ -1,3 +1,13 @@
+import cypressConfig from "eslint-plugin-cypress";
+import vueConfig from "eslint-plugin-vue";
+import typescriptEslintConfig from "@typescript-eslint/eslint-plugin";
+import prettierConfig from "eslint-plugin-prettier";
+import promiseConfig from "eslint-plugin-promise";
+import cssConfig from "eslint-plugin-css";
+import recommendedVueConfig from "@vue/eslint-config-typescript/recommended";
+import eslintRecommendedConfig from "eslint/conf/eslint-recommended";
+import recommendedTSConfig from "@typescript-eslint/eslint-plugin/dist/configs/recommended";
+
 import cypressRules from "./rules/cypress";
 import vueRules from "./rules/vue";
 import importRules from "./rules/import";
@@ -6,6 +16,10 @@ export default [
   {
     ignores: ["dist", "node_modules"],
   },
+  // Base ESLint configurations and recommended configs
+  ...eslintRecommendedConfig,
+  ...recommendedTSConfig,
+  ...recommendedVueConfig,
   {
     files: ["**/*.js", "**/*.ts", "**/*.vue"],
     languageOptions: {
@@ -16,11 +30,11 @@ export default [
       },
     },
     plugins: {
-      "@typescript-eslint": require("@typescript-eslint/eslint-plugin"),
-      "vue": require("eslint-plugin-vue"),
-      "css": require("eslint-plugin-css"),
-      "prettier": require("eslint-plugin-prettier"),
-      "promise": require("eslint-plugin-promise"),
+      "@typescript-eslint": typescriptEslintConfig,
+      "vue": vueConfig,
+      "css": cssConfig,
+      "prettier": prettierConfig,
+      "promise": promiseConfig,
     },
     rules: {
       "@typescript-eslint/explicit-function-return-type": "error",
@@ -100,7 +114,7 @@ export default [
   {
     files: ["**/*.cy.spec.ts"],
     plugins: {
-      cypress: require("eslint-plugin-cypress"),
+      cypress: cypressConfig,
     },
     rules: cypressRules,
   },
