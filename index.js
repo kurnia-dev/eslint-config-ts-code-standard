@@ -1,6 +1,5 @@
 import cypress from "./rules/cypress";
 import vue from "./rules/vue";
-import importRules from "./rules/import";
 
 module.exports = {
   env: {
@@ -56,7 +55,7 @@ module.exports = {
     ecmaVersion: "latest",
     parser: "@typescript-eslint/parser",
   },
-  plugins: ["@typescript-eslint", "vue", "import"],
+  plugins: ["@typescript-eslint", "vue"],
   rules: {
     "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-module-boundary-types": "error",
@@ -129,6 +128,5 @@ module.exports = {
     "promise/prefer-await-to-then": "error",
     "quotes": ["error", "single", { avoidEscape: true }],
     ...vue,
-    ...importRules,
   },
 };
