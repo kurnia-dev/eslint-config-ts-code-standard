@@ -57,7 +57,7 @@ export default {
     },
   ],
   "vue/max-attributes-per-line": "off",
-  "vue/multi-word-component-names": "error",
+  "vue/multi-word-component-names": "off",
   "vue/new-line-between-multi-line-property": "error",
   "vue/next-tick-style": ["error", "callback"],
   "vue/no-dupe-keys": "error",
